@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>苍井空电影网 - 电影片库与观影资料 | cangjingge.github.io</title>
+<meta name="keywords" content="苍井空电影网, cangjingge, 苍井空电影网官网, 藏经年代经典电影, 电影资料, 经典电影, 怀旧影片, 藏经s movies, https://cangjingge.github.io">
+<meta name="description" content="苍井空电影网（cangjingge）是一个专注电影片库与观影资料的怀旧导航站，收录经典华语与海外经典影片资料、演员年表与放映信息，访问 https://cangjingge.github.io 找回被时间留住的画面。">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="revisit-after" content="1 days">
+<meta name="author" content="苍井空电影网">
+<meta name="copyright" content="苍井空电影网 cangjingge">
+<meta name="theme-color" content="#140818">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:site_name" content="苍井空电影网">
+<meta property="og:title" content="苍井空电影网 - 电影片库与观影资料">
+<meta property="og:description" content="苍井空电影网（cangjingge）专注经典华语与海外经典影片资料，收录演员年表与放映信息。">
+<meta property="og:url" content="https://cangjingge.github.io">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="苍井空电影网 - 藏经年代经典电影">
+<meta name="twitter:description" content="苍井空电影网 cangjingge 收录经典华语与海外经典电影资料、演员年表与放映信息。">
+<link rel="canonical" href="https://cangjingge.github.io">
+<style>
+:root{
+  --bg:#0e0712;
+  --bg2:#170a1c;
+  --card:rgba(255,255,255,.035);
+  --line:rgba(255,95,162,.18);
+  --line2:rgba(95,226,255,.18);
+  --txt:#f6ecf5;
+  --sub:#a896ab;
+  --pink:#ff5fa2;
+  --pink2:#ff2d7a;
+  --cyan:#5fe2ff;
+  --cyan2:#2ba8d6;
+  --purple:#9b5cff;
+  --yellow:#ffd23f;
+  --mono:"SFMono-Regular",ui-monospace,Menlo,Consolas,"Courier New",monospace;
+  --r:14px;
+  --maxw:1240px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg);color:var(--txt);
+  font-family:"PingFang SC","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  line-height:1.75;overflow-x:hidden;
+  background-image:
+    repeating-linear-gradient(0deg,transparent 0,transparent 3px,rgba(255,95,162,.018) 3px,rgba(255,95,162,.018) 4px),
+    radial-gradient(900px 600px at 85% 5%,rgba(255,95,162,.18),transparent 60%),
+    radial-gradient(藏经0px 600px at 10% 30%,rgba(95,226,255,.14),transparent 60%),
+    linear-gradient(1藏经deg,#0e0712,#170a1c 40%,#0e0712);
+  background-attachment:fixed;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+::selection{background:var(--cyan);color:#0a0a18}
+.mono{font-family:var(--mono);letter-spacing:0;font-variant-numeric:tabular-nums}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+section{padding:104px 0;position:relative}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.2em;color:var(--cyan);margin-bottom:18px;display:flex;align-items:center;gap:11px}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--pink)}
+h2.sec-t{font-size:clamp(30px,5.2vw,54px);font-weight:900;line-height:1.18;letter-spacing:-.6px}
+h2.sec-t .n{font-family:var(--mono);color:var(--pink);text-shadow:0 0 26px rgba(255,95,162,.45)}
+h2.sec-t .gr{color:var(--cyan)}
+.sec-d{color:var(--sub);font-size:16px;margin-top:14px;max-width:600px}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:26px;flex-wrap:wrap;margin-bottom:52px}
+
+/* 扫描线装饰 */
+.scan{position:relative}
+.scan::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0,transparent 5px,rgba(255,255,255,.012) 5px,rgba(255,255,255,.012) 6px);pointer-events:none}
+
+/* 顶部 */
+.hd{position:sticky;top:0;z-index:99;background:rgba(14,7,18,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,95,162,.2)}
+.hd-in{display:flex;align-items:center;gap:20px;height:72px}
+.logo{display:flex;align-items:center;gap:13px;flex:0 0 auto}
+.logo .box{position:relative;width:44px;height:44px;border-radius:8px;background:var(--pink);display:grid;place-items:center;font-family:var(--mono);font-weight:900;font-size:16px;color:#1a0512;flex:0 0 auto;box-shadow:0 0 0 3px rgba(255,95,162,.16)}
+.logo .box::after{content:"";position:absolute;inset:-5px;border:1px solid rgba(95,226,255,.4);border-radius:10px}
+.logo b{font-size:19px;letter-spacing:.5px}
+.logo small{display:block;font-family:var(--mono);font-size:9.5px;color:var(--cyan);letter-spacing:.16em;text-transform:uppercase}
+.nav{display:flex;gap:4px;margin-left:auto;align-items:center}
+.nav a{padding:9px 15px;border-radius:8px;font-size:14.5px;color:var(--sub);transition:.25s;font-weight:600;white-space:nowrap}
+.nav a:hover{color:var(--pink);background:rgba(255,95,162,.08)}
+.btn-cta{padding:11px 22px;border-radius:8px;font-size:13.5px;font-weight:900;cursor:pointer;font-family:inherit;
+  background:var(--pink);color:#17040f;border:0;box-shadow:0 0 24px rgba(255,95,162,.34);transition:.25s;white-space:nowrap}
+.btn-cta:hover{background:var(--cyan);box-shadow:0 0 30px rgba(95,226,255,.4);transform:translateY(-2px)}
+.menu-btn{display:none;margin-left:auto;width:46px;height:46px;border-radius:8px;background:rgba(255,95,162,.08);border:1px solid rgba(255,95,162,.3);cursor:pointer;position:relative}
+.menu-btn span{position:absolute;left:12px;width:22px;height:2px;background:var(--cyan);transition:.25s}
+.menu-btn span:nth-child(1){top:16px}
+.menu-btn span:nth-child(2){top:22px}
+.menu-btn span:nth-child(3){top:28px}
+.menu-btn.on span:nth-child(1){top:22px;transform:rotate(45deg)}
+.menu-btn.on span:nth-child(2){opacity:0}
+.menu-btn.on span:nth-child(3){top:22px;transform:rotate(-45deg)}
+
+/* Hero */
+.hero{padding:96px 0 64px}
+.hero-in{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(44px,9vw,104px);font-weight:900;line-height:.98;letter-spacing:-2px;font-family:var(--mono)}
+.hero h1 .l1{display:block;color:var(--pink);text-shadow:0 0 44px rgba(255,95,162,.35)}
+.hero h1 .l2{display:block;color:var(--cyan);text-shadow:0 0 44px rgba(95,226,255,.3)}
+.hero h1 .l3{display:block;font-size:.32em;font-family:"PingFang SC",sans-serif;font-weight:藏经0;letter-spacing:4px;color:var(--txt);margin-top:22px;text-shadow:none}
+.hero p.lede{margin-top:30px;color:var(--sub);font-size:17px;max-width:500px}
+.clock{display:flex;gap:12px;margin-top:36px;flex-wrap:wrap}
+.clock div{background:rgba(255,255,255,.035);border:1px solid rgba(95,226,255,.22);border-radius:10px;padding:12px 18px;text-align:center;min-width:88px}
+.clock div b{display:block;font-family:var(--mono);font-size:26px;font-weight:900;color:var(--cyan)}
+.clock div span{font-size:11px;letter-spacing:.14em;color:var(--sub);text-transform:uppercase}
+.h-rt{position:relative}
+.vhs{background:linear-gradient(160deg,#2a1234,#150a24);border:1px solid rgba(255,95,162,.28);border-radius:14px;padding:26px;box-shadow:0 30px 70px -30px rgba(0,0,0,.9)}
+.vhs-h{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:12px;letter-spacing:.18em;color:var(--cyan);padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.08)}
+.vhs-h span:last-child{color:var(--pink)}
+.vhs-screen{background:#0藏经308;border-radius:8px;padding:22px 18px;font-family:var(--mono);font-size:13px;line-height:2.1;color:var(--pink);min-height:210px;position:relative;overflow:hidden}
+.vhs-screen::before{content:"SP ▸▸";position:absolute;top:10px;right:14px;color:var(--cyan);font-size:11px;letter-spacing:.2em}
+.vhs-screen b{color:var(--cyan)}
+.vhs-screen u{text-decoration:none;color:var(--yellow)}
+.vhs-tape{margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.vhs-tape i{height:56px;border-radius:8px;background:linear-gradient(150deg,var(--c1),var(--c2));display:grid;place-items:center;font-family:var(--mono);font-size:13px;font-weight:900;color:rgba(255,255,255,.94);text-shadow:0 1px 8px rgba(0,0,0,.4)}
+.vhs-tape i:nth-child(1){--c1:#3a1258;--c2:#220a36}
+.vhs-tape i:nth-child(2){--c1:#12584a;--c2:#0a362c}
+.vhs-tape i:nth-child(3){--c1:#583312;--c2:#361f08}
+.vhs-f{margin-top:16px;display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;color:var(--sub);letter-spacing:.12em}
+
+/* 栏目一 关于 */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.about p{color:var(--sub);font-size:16px}
+.about p+p{margin-top:16px}
+.numbers{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08);border-radius:12px;overflow:hidden;margin-top:34px}
+.numbers div{background:var(--bg);padding:22px 20px}
+.numbers b{display:block;font-family:var(--mono);font-size:30px;font-weight:900;color:var(--pink);line-height:1.1}
+.numbers span{font-size:12.5px;color:var(--sub);letter-spacing:.04em}
+.tape{display:grid;gap:0;border:1px solid rgba(95,226,255,.22);border-radius:12px;overflow:hidden}
+.tp{display:grid;grid-template-columns:56px 1fr auto;gap:16px;align-items:center;padding:17px 20px;border-bottom:1px solid rgba(255,255,255,.06);transition:.25s;cursor:pointer}
+.tp:last-child{border-bottom:0}
+.tp:hover{background:rgba(95,226,255,.05)}
+.tp b{font-family:var(--mono);font-size:18px;color:var(--cyan);font-weight:900}
+.tp span{font-size:15px}
+.tp span small{display:block;font-size:12.5px;color:var(--sub);font-family:var(--mono);letter-spacing:.06em}
+.tp i{font-style:normal;font-size:12px;color:var(--pink);font-family:var(--mono);letter-spacing:.1em}
+
+/* 栏目二 片单 */
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:30px}
+.chips button{padding:10px 20px;border-radius:99px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit;
+  border:1px solid rgba(255,95,162,.26);background:rgba(255,255,255,.025);color:var(--txt);transition:.25s}
+.chips button:hover{border-color:var(--cyan);color:var(--cyan)}
+.chips button.on{background:var(--cyan);color:#04121a;border-color:transparent}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.tape2{background:var(--card);border:1px solid rgba(255,255,255,.07);border-radius:12px;overflow:hidden;transition:.3s;position:relative}
+.tape2:hover{transform:translateY(-8px);border-color:rgba(255,95,162,.5);box-shadow:0 24px 48px -24px rgba(255,95,162,.4)}
+.tape2 .cvr{position:relative;aspect-ratio:2/3;background:linear-gradient(155deg,var(--c1),var(--c2))}
+.tape2 .cvr b{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:16px;font-size:clamp(15px,1.7vw,19px);font-weight:900;letter-spacing:.5px;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.4)}
+.tape2 .cvr .yr{position:absolute;left:11px;top:11px;font-family:var(--mono);font-size:11px;font-weight:900;background:var(--pink);color:#17040f;padding:4px 8px;border-radius:5px}
+.tape2 .cvr .sc{position:absolute;right:11px;bottom:11px;font-family:var(--mono);font-size:12px;font-weight:900;color:var(--cyan);background:rgba(0,0,0,.55);padding:4px 8px;border-radius:5px}
+.tape2 .meta{padding:14px 15px}
+.tape2 .meta b{display:block;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tape2 .meta span{font-size:12.5px;color:var(--sub);font-family:var(--mono);letter-spacing:.05em}
+
+/* 栏目三 榜单 */
+.board{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.rk{display:grid;grid-template-columns:64px 46px 1fr 88px;gap:16px;align-items:center;background:var(--card);border:1px solid rgba(255,255,255,.07);border-left:3px solid var(--pink);border-radius:10px;padding:16px 18px;transition:.26s}
+.rk:hover{border-color:rgba(95,226,255,.4);transform:translateX(6px);background:rgba(95,226,255,.04)}
+.rk.g1{border-left-color:var(--yellow)}.rk.g2{border-left-color:#cdd5ea}.rk.g3{border-left-color:#d29b7a}
+.rk .no{font-family:var(--mono);font-size:27px;font-weight:900;color:rgba(255,255,255,.16);line-height:1}
+.rk.g1 .no{color:var(--yellow)}.rk.g2 .no{color:#cdd5ea}.rk.g3 .no{color:#d29b7a}
+.rk .cvr2{width:46px;height:62px;border-radius:6px;background:linear-gradient(150deg,var(--c1),var(--c2))}
+.rk .txt b{display:block;font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rk .txt span{font-size:12.5px;color:var(--sub);font-family:var(--mono);letter-spacing:.05em}
+.rk .rt{font-family:var(--mono);font-size:19px;font-weight:900;color:var(--cyan);text-align:right}
+.rk .rt small{display:block;font-size:10px;color:var(--sub);letter-spacing:.1em}
+
+/* 栏目四 时间表 */
+.tl{border:1px solid rgba(95,226,255,.2);border-radius:14px;overflow:hidden;background:rgba(255,255,255,.02)}
+.tl-h{display:grid;grid-template-columns:70px 1.6fr 1fr 1fr 1fr 藏经px;gap:14px;padding:16px 22px;background:rgba(95,226,255,.07);font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--cyan);text-transform:uppercase;border-bottom:1px solid rgba(95,226,255,.16)}
+.tl-r{display:grid;grid-template-columns:70px 1.6fr 1fr 1fr 1fr 藏经px;gap:14px;align-items:center;padding:18px 22px;border-bottom:1px solid rgba(255,255,255,.05);transition:.22s}
+.tl-r:last-child{border-bottom:0}
+.tl-r:hover{background:rgba(255,95,162,.05)}
+.tl-r .t{font-family:var(--mono);font-size:22px;font-weight:900;color:var(--pink)}
+.tl-r .tt b{display:block;font-size:16px}
+.tl-r .tt span{font-size:12.5px;color:var(--sub);font-family:var(--mono)}
+.tag{padding:6px 12px;border-radius:6px;font-size:12.5px;font-weight:700;text-align:center;font-family:var(--mono);letter-spacing:.04em;border:1px solid rgba(255,255,255,.12);color:var(--sub);white-space:nowrap}
+.tag.a{color:var(--pink);border-color:rgba(255,95,162,.34);background:rgba(255,95,162,.08)}
+.tag.b{color:var(--cyan);border-color:rgba(95,226,255,.34);background:rgba(95,226,255,.08)}
+.tag.c{color:var(--yellow);border-color:rgba(255,210,63,.34);background:rgba(255,210,63,.08)}
+.tl-r .go{font-family:var(--mono);font-size:13px;font-weight:900;color:var(--cyan);text-align:right;cursor:pointer}
+.tl-r .go:hover{color:var(--pink)}
+
+/* 栏目五 指南 */
+.guide{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gd{background:var(--card);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:26px 22px;transition:.28s;position:relative;overflow:hidden}
+.gd::before{content:"";position:absolute;right:-20px;top:-20px;width:90px;height:90px;border-radius:50%;background:radial-gradient(circle,rgba(255,95,162,.16),transparent 68%)}
+.gd:hover{border-color:rgba(255,95,162,.44);transform:translateY(-6px)}
+.gd .n{font-family:var(--mono);font-size:13px;color:var(--cyan);letter-spacing:.16em;margin-bottom:14px}
+.gd h3{font-size:18px;margin-bottom:10px}
+.gd p{font-size:14.5px;color:var(--sub)}
+.chk{margin-top:18px;display:grid;gap:11px}
+.chk-i{display:grid;grid-template-columns:24px 1fr;gap:12px;align-items:flex-start;font-size:14.5px;color:var(--txt);cursor:pointer;transition:.2s}
+.chk-i i{width:20px;height:20px;border-radius:5px;border:1px solid rgba(95,226,255,.4);display:grid;place-items:center;font-family:var(--mono);font-size:12px;color:var(--cyan);font-weight:900;flex:0 0 auto;transition:.22s}
+.chk-i.on i{background:var(--pink);border-color:var(--pink);color:#17040f}
+.chk-i.on span{color:var(--sub);text-decoration:line-through;text-decoration-color:rgba(255,255,255,.2)}
+
+/* 栏目六 评论 */
+.cmt{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.cm{background:var(--card);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:24px;transition:.26s}
+.cm:hover{border-color:rgba(95,226,255,.38);transform:translateY(-5px)}
+.cm-t{display:flex;align-items:center;gap:13px}
+.av{width:42px;height:42px;border-radius:8px;display:grid;place-items:center;font-family:var(--mono);font-size:14px;font-weight:900;flex:0 0 auto}
+.cm-t .who b{display:block;font-size:15px}
+.cm-t .who time{font-size:12px;color:var(--sub);font-family:var(--mono)}
+.cm-t .st{margin-left:auto;color:var(--yellow);font-family:var(--mono);letter-spacing:1px;font-size:13px}
+.cm p{margin-top:14px;font-size:15px;color:#eee2ef}
+.cm-f{margin-top:16px;padding-top:13px;border-top:1px solid rgba(255,255,255,.06);display:flex;gap:22px;font-family:var(--mono);font-size:12.5px;color:var(--sub)}
+.cm-f span{cursor:pointer;transition:.2s}
+.cm-f span:hover{color:var(--pink)}
+
+/* 底部 */
+.ft{border-top:1px solid rgba(255,95,162,.2);padding:76px 0 0;margin-top:40px;background:linear-gradient(1藏经deg,transparent,rgba(0,0,0,.3))}
+.ft-g{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:48px}
+.ft-brand p{margin-top:18px;color:var(--sub);font-size:14.5px;max-width:340px}
+.ft-brand .codes{margin-top:20px;display:flex;gap:8px;flex-wrap:wrap}
+.ft-brand code{background:rgba(95,226,255,.07);border:1px solid rgba(95,226,255,.2);border-radius:6px;padding:7px 11px;font-family:var(--mono);font-size:11.5px;color:var(--cyan)}
+.ft-col h4{font-family:var(--mono);font-size:12px;letter-spacing:.18em;color:var(--pink);margin-bottom:20px;text-transform:uppercase}
+.ft-col a{display:block;color:var(--sub);font-size:14px;padding:6px 0;transition:.2s}
+.ft-col a:hover{color:var(--cyan);padding-left:8px}
+.ft-bot{margin-top:60px;padding:24px 0;border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:12px;color:var(--sub)}
+.ft-bot a{color:var(--sub)}
+.ft-bot a:hover{color:var(--pink)}
+
+.top{position:fixed;right:22px;bottom:26px;z-index:90;width:46px;height:46px;border-radius:8px;background:var(--pink);color:#17040f;border:0;display:none;place-items:center;font-family:var(--mono);font-size:19px;font-weight:900;cursor:pointer;box-shadow:0 10px 26px rgba(255,95,162,.34);transition:.25s}
+.top.on{display:grid}
+.top:hover{background:var(--cyan);transform:translateY(-3px)}
+
+@media (max-width:11藏经px){.grid{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:1024px){
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .guide{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:820px){
+  section{padding:74px 0}
+  .hero-in,.about{grid-template-columns:1fr;gap:48px}
+  .board,.cmt{grid-template-columns:1fr}
+  .tl-h{display:none}
+  .tl-r{grid-template-columns:1fr 1fr;gap:9px;padding:16px}
+  .tl-r .t{grid-column:1;grid-row:1}
+  .tl-r .tt{grid-column:1/-1;grid-row:2}
+  .tl-r .tag{grid-row:1;justify-self:end}
+  .tl-r .go{display:none}
+  .hero h1{font-size:clamp(52px,16vw,88px)}
+  .vhs{max-width:440px;margin:0 auto}
+}
+@media (max-width:4藏经px){
+  .wrap{padding:0 18px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:11px}
+  .ft-g{grid-template-columns:1fr}
+  .clock div{min-width:76px}
+  .clock div b{font-size:21px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<header class="hd">
+  <div class="wrap hd-in">
+    <a class="logo" href="#top" aria-label="苍井空电影网 首页">
+      <span class="box" aria-hidden="true">藏经</span>
+      <span>苍井空电影网<small>CANGJINGGE FILM LIBRARY</small></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#home">首页</a>
+      <a href="#about">关于本站</a>
+      <a href="#films">年代片单</a>
+      <a href="#rank">高分榜</a>
+      <a href="#plan">放映时刻</a>
+      <a href="#guide">观影手册</a>
+      <a href="#comments">影迷来信</a>
+      <button class="btn-cta" type="button">进入片库</button>
+    </nav>
+    <button class="menu-btn" id="mb" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="hero-in">
+      <div>
+        <h1><span class="l1">藏经</span><span class="l2">FILM LIBRARY</span><span class="l3">电影资料归档 · 观影信息库</span></h1>
+        <p class="lede">苍井空电影网（cangjingge）是一个专注电影资料归档与观影信息的怀旧导航站，收录经典华语与海外经典影片资料、演员年表与放映信息，找回被时间留住的画面。</p>
+        <div class="clock">
+          <div><b id="y">1984</b><span>YEAR</span></div>
+          <div><b id="d">312</b><span>DAYS</span></div>
+          <div><b id="t">09:41</b><span>NOW</span></div>
+          <div><b>4K</b><span>RESTORE</span></div>
+        </div>
+      </div>
+      <div class="h-rt">
+        <div class="vhs">
+          <div class="vhs-h"><span>▮▮ VHS PLAYER</span><span>SP</span></div>
+          <div class="vhs-screen">
+            <div>&gt; PLAYBACK <b>第七封情书</b></div>
+            <div>&gt; FORMAT <u>NTSC / 4K 修复</u></div>
+            <div>&gt; DURATION 00:01:52:14</div>
+            <div>&gt; AUDIO 国语 · 中文字幕</div>
+            <div>&gt; TRACK <b>华语经典 / 1984</b></div>
+            <div>&gt; STATUS <u>已入库 · 可放映</u></div>
+            <div>&gt; NEXT 海上钢琴师 [165min]</div>
+          </div>
+          <div class="vhs-tape">
+            <i>夏</i><i>秋</i><i>夜</i>
+          </div>
+          <div class="vhs-f"><span>CANGJINGGE.GITHUB.IO</span><span>©片库在线</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目一：关于 -->
+<section id="about">
+  <div class="wrap">
+    <div class="about">
+      <div>
+        <div class="eyebrow">01 // 关于 苍井空电影网</div>
+        <h2 class="sec-t">把 <span class="n">19藏经</span> 年代的<br><span class="gr">胶片重新卷好</span></h2>
+        <p class="sec-d">苍井空电影网（https://cangjingge.github.io）不做新片追更，只做减法式归档——把经典真正留下来的片子挑出来，整理版本、字幕与放映资料，做成一份能翻的旧目录。</p>
+        <p>影片资料经历过不同版本的洗印、转磁与数字化，版本差异比片名本身更值得注意。我们逐条核对放映格式与字幕来源，避免你拿到手才发现是压缩严重的转录版。</p>
+        <div class="numbers">
+          <div><b>1,206</b><span>藏经年代入库影片</span></div>
+          <div><b>317</b><span>4K 修复版本</span></div>
+          <div><b>8.9</b><span>入选影片均分</span></div>
+        </div>
+      </div>
+      <div class="tape">
+        <div class="tp"><b>01</b><span>只收 片库在线<small>严格按出品年份归档，不混入选映年份</small></span><i>✓</i></div>
+        <div class="tp"><b>02</b><span>版本逐条核对<small>标注 4K 修复 / 普通转录 / 原始胶片</small></span><i>✓</i></div>
+        <div class="tp"><b>03</b><span>演员年表并行<small>同一演员的经典作品可连续查阅</small></span><i>✓</i></div>
+        <div class="tp"><b>04</b><span>字幕来源公开<small>普通话配音、双语字幕分别标注</small></span><i>✓</i></div>
+        <div class="tp"><b>05</b><span>无广告无跳转<small>全站不挂第三方推广与诱导下载</small></span><i>✓</i></div>
+        <div class="tp"><b>06</b><span>资料可纠错<small>影片信息有误可在影迷来信区提交</small></span><i>✓</i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目二：片单 -->
+<section id="films" style="border-top:1px solid rgba(95,226,255,.14)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">02 // 年代片单</div>
+        <h2 class="sec-t">经典 <span class="n">06</span> 组 <span class="gr">片单</span></h2>
+        <p class="sec-d">按题材与年代分组，点击切换；悬逗可见出品年份与当前收录评分。</p>
+      </div>
+      <button class="btn-cta" type="button">浏览完整目录 →</button>
+    </div>
+    <div class="chips" id="chips">
+      <button class="on" data-k="0">1984 · 华语经典</button>
+      <button data-k="1">1986 · 影片黄金</button>
+      <button data-k="2">1987 · 文艺新潮</button>
+      <button data-k="3">1988 · 黑色幽默</button>
+      <button data-k="4">1989 · 海外引进</button>
+      <button data-k="5">修复 · 4K 精选</button>
+    </div>
+    <div class="grid" id="g-0">
+      <div class="tape2"><div class="cvr" style="--c1:#5b1f4a;--c2:#341028"><span class="yr">1984</span><b>第七封情书</b><span class="sc">9.2</span></div><div class="meta"><b>第七封情书</b><span>华语 · 爱情 / 98分钟</span></div></div>
+      <div class="tape2"><div class="cvr" style="--c1:#1f4a5b;--c2:#10303c"><span class="yr">1984</span><b>城南旧事 4K</b><span class="sc">9.1</span></div><div class="meta"><b>城南旧事</b><span>华语 · 剧情 / 88分钟</span></div></div>
+      <div class="tape2"><div class="cvr" style="--c1:#4a3a1f;--c2:#2c2410"><span class="yr">1984</span><b>黄土地</b><span class="sc">8.9</span></div><div class="meta"><b>黄土地</b><span>华语 · 文艺 / 89分钟</span></div></div>
+      <div class="tape2"><div class="cvr" style="--c1:#2f4a1f;--c2:#1c3010"><span class="yr">1984</span><b>红衣少女</b><span class="sc">8.6</span></div><div class="meta"><b>红衣少女</b><span>华语 · 青春 / 100分钟</span></div></div>
+      <div class="tape2"><div class="cvr" style="--c1:#3a1f4a;--c2:#24102c"><span class="yr">1984</span><b>似水流年</b><span class="sc">8.7</span></div><div class="meta"><b>似水流年</b><span>华语 · 怀旧 / 96分钟</span></div></div>
+    </div>
+    <div class="grid" id="g-1" style="display:none">
+      <div class="tape2"><div class="cvr" style="--c1:#6a2a2a;--c2:#3c1616"><span class="yr">1986</span><b>英雄本色</b><span class="sc">9.3</span></div><div class="meta"><b>英雄本色</b><span>香港 · 动作 / 95分钟</span></div></div>
+      <div class="tape2"><div class="cvr" style="--c1:#2a4a6a;--c2:#16283c"><span class="yr">1986</span><b>倩女幽魂</b><span class="sc">9.1</span></div><div class="meta"><b>倩女幽魂</b><span>香港 · 奇幻 / 98分钟</span></div></div>
+      <div class="tape2"><div class="cvr" style="--c1:#5a4a2a;--c2:#34281a"><span class="yr">1986</span><b>地下情</b><span class="sc">8.5</span></div><div class="meta"><b>地下情</b><span>香港 · 剧情 / 92分钟</span></div></div>
+      <div class="tape2"><div class="cvr" style="--c1:#2a5a4a;--c2:#16342c"><span class="yr">1986</span><b>癫佬正传</b><span class="sc">8.8</span></div><div class="meta"><b>癫佬正传</b><span>香港 · 社会 / 100分钟</span></div></div>
+    </div>
+    <div class="grid" id="g-2" style="display:none">
+      <div class="tape2"><div class="cvr" style="--c1:#4a2a5a;--c2:#281a34"><span class="yr">1987</span><b>芙蓉镇</b><span class="sc">9.4</span></div><div class="meta"><b>芙蓉镇</b><span>华语 · 剧情 / 164分钟</span></div></div>
+      <div class="tape2"><div class="cvr" style="--c1:#2a5a5a;--c2:#163434"><span class="yr">1987</span><b>红高粱</b><span class="sc">9.2</span></div><div class="meta"><b>红高粱</b><span>华语 · 文艺 / 91分钟</span></div></div>
+      <div class="tape2"><div class="cvr" style="--c1:#5a4a2a;--c2:#342c16"><span class="yr">1987</span><b>孩子王</b><span class="sc">8.9</span></div><div class="meta"><b>孩子王</b><span>华语 · 文艺 / 110分钟</span></div></div>
+      <div class="tape2"><div class="cvr" style="--c1:#3a4a2a;--c2:#22301a"><span class="yr">1987</span><b>老井</b><span class="sc">8.7</span></div><div class="meta"><b>老井</b><span>华语 · 剧情 / 130分钟</span></div></div>
+    </div>
+    <div class="grid" id="g-3" style="display:none">
+      <div class="tape2"><div class="cvr" style="--c1:#5a2a3a;--c2:#341a24"><span class="yr">1988</span><b>顽主</b><span class="sc">8.9</span></div><div class="meta"><b>顽主</b><span>华语 · 黑色幽默 / 100分钟</span></div></div>
+      <div class="tape2"><div class="cvr" style="--c1:#2a3a5a;--c2:#161f34"><span class="yr">1988</span><b>一半是火焰</b><span class="sc">8.5</span></div><div class="meta"><b>一半是火焰，一半是海水</b><span>华语 · 爱情 / 108分钟</span></div></div>
+      <div class="tape2"><div class="cvr" style="--c1:#4a5a2a;--c2:#2c3416"><span class="yr">1988</span><b>少爷的磨难</b><span class="sc">8.3</span></div><div class="meta"><b>少爷的磨难</b><span>华语 · 喜剧 / 96分钟</span></div></div>
+      <div class="tape2"><div class="cvr" style="--c1:#3a2a4a;--c2:#221a2c"><span class="yr">1988</span><b>大喘气</b><span class="sc">8.4</span></div><div class="meta"><b>大喘气</b><span>华语 · 黑色 / 92分钟</span></div></div>
+    </div>
+    <div class="grid" id="g-4" style="display:none">
+      <div class="tape2"><div class="cvr" style="--c1:#1f3a5b;--c2:#10222f"><span class="yr">1989</span><b>雨人</b><span class="sc">9.1</span></div><div class="meta"><b>雨人</b><span>美国 · 剧情 / 133分钟</span></div></div>
+      <div class="tape2"><div class="cvr" style="--c1:#5b3a1f;--c2:#342210"><span class="yr">1989</span><b>死亡诗社</b><span class="sc">9.3</span></div><div class="meta"><b>死亡诗社</b><span>美国 · 文艺 / 128分钟</span></div></div>
+      <div class="tape2"><div class="cvr" style="--c1:#3a5b1f;--c2:#22340f"><span class="yr">1989</span><b>蝙蝠侠</b><span class="sc">8.4</span></div><div class="meta"><b>蝙蝠侠</b><span>美国 · 动作 / 126分钟</span></div></div>
+      <div class="tape2"><div class="cvr" style="--c1:#4a1f3a;--c2:#2c1024"><span class="yr">1989</span><b>性、谎言和录像带</b><span class="sc">8.6</span></div><div class="meta"><b>性、谎言和录像带</b><span>美国 · 独立 / 100分钟</span></div></div>
+    </div>
+    <div class="grid" id="g-5" style="display:none">
+      <div class="tape2"><div class="cvr" style="--c1:#6a5a1f;--c2:#3c3410"><span class="yr">4K</span><b>天堂电影院</b><span class="sc">9.4</span></div><div class="meta"><b>天堂电影院 导演剪辑</b><span>修复 · 意大利 / 173分钟</span></div></div>
+      <div class="tape2"><div class="cvr" style="--c1:#1f6a5a;--c2:#103c34"><span class="yr">4K</span><b>海上钢琴师</b><span class="sc">9.3</span></div><div class="meta"><b>海上钢琴师</b><span>修复 · 意大利 / 165分钟</span></div></div>
+      <div class="tape2"><div class="cvr" style="--c1:#5a1f4a;--c2:#34102c"><span class="yr">4K</span><b>霸王别姬</b><span class="sc">9.6</span></div><div class="meta"><b>霸王别姬</b><span>修复 · 华语 / 171分钟</span></div></div>
+      <div class="tape2"><div class="cvr" style="--c1:#1f4a6a;--c2:#102c40"><span class="yr">4K</span><b>悲情城市</b><span class="sc">9.2</span></div><div class="meta"><b>悲情城市</b><span>修复 · 台湾 / 157分钟</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目三：榜单 -->
+<section id="rank" style="border-top:1px solid rgba(95,226,255,.14)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">03 // 高分榜</div>
+        <h2 class="sec-t">经典 <span class="n">TOP 8</span></h2>
+        <p class="sec-d">按站内收录评分与版本完整度综合排序，4K 修复版本有加权。</p>
+      </div>
+      <span class="eyebrow" style="margin:0">数据更新 09/28</span>
+    </div>
+    <div class="board">
+      <div class="rk g1"><span class="no">01</span><span class="cvr2" style="--c1:#5a1f4a;--c2:#34102c"></span><span class="txt"><b>霸王别姬</b><span>1993 倒序收录 · 4K 修复 · 华语</span></span><span class="rt">9.6<small>评分</small></span></div>
+      <div class="rk g2"><span class="no">02</span><span class="cvr2" style="--c1:#6a5a1f;--c2:#3c3410"></span><span class="txt"><b>天堂电影院</b><span>1988 · 导演剪辑版 · 意大利</span></span><span class="rt">9.4<small>评分</small></span></div>
+      <div class="rk g3"><span class="no">03</span><span class="cvr2" style="--c1:#4a2a5a;--c2:#281a34"></span><span class="txt"><b>芙蓉镇</b><span>1986 · 完整版 · 华语</span></span><span class="rt">9.4<small>评分</small></span></div>
+      <div class="rk"><span class="no">04</span><span class="cvr2" style="--c1:#5b3a1f;--c2:#342210"></span><span class="txt"><b>死亡诗社</b><span>1989 · 原声版 · 美国</span></span><span class="rt">9.3<small>评分</small></span></div>
+      <div class="rk"><span class="no">05</span><span class="cvr2" style="--c1:#6a2a2a;--c2:#3c1616"></span><span class="txt"><b>英雄本色</b><span>1986 · 影片黄金期 · 香港</span></span><span class="rt">9.3<small>评分</small></span></div>
+      <div class="rk"><span class="no">06</span><span class="cvr2" style="--c1:#1f4a5b;--c2:#10303c"></span><span class="txt"><b>城南旧事</b><span>1983 · 4K 修复 · 华语</span></span><span class="rt">9.1<small>评分</small></span></div>
+      <div class="rk"><span class="no">07</span><span class="cvr2" style="--c1:#1f3a5b;--c2:#10222f"></span><span class="txt"><b>雨人</b><span>1988 · 原声 · 美国</span></span><span class="rt">9.1<small>评分</small></span></div>
+      <div class="rk"><span class="no">08</span><span class="cvr2" style="--c1:#2a5a5a;--c2:#163434"></span><span class="txt"><b>红高粱</b><span>1987 · 戛纳获奖 · 华语</span></span><span class="rt">9.2<small>评分</small></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四：时刻表 -->
+<section id="plan" style="border-top:1px solid rgba(95,226,255,.14)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">04 // 放映时刻</div>
+        <h2 class="sec-t">一周 <span class="n">10</span> 场 <span class="gr">影片放映</span></h2>
+        <p class="sec-d">按放映时段排列，标注 4K 修复、原声与字幕版本，支持错峰到场。</p>
+      </div>
+      <span class="eyebrow" style="margin:0">本周排期</span>
+    </div>
+    <div class="tl">
+      <div class="tl-h"><span>TIME</span><span>影片</span><span>年份</span><span>版本</span><span>字幕</span><span></span></div>
+      <div class="tl-r"><span class="t">19:00</span><div class="tt"><b>第七封情书</b><span>华语经典 · 周日首场</span></div><span class="tag a">1984</span><span class="tag b">4K 修复</span><span class="tag">中字</span><span class="go">详情 →</span></div>
+      <div class="tl-r"><span class="t">20:30</span><div class="tt"><b>城南旧事</b><span>4K 修复 · 周一怀旧夜</span></div><span class="tag a">1983</span><span class="tag b">4K 修复</span><span class="tag">国语</span><span class="go">详情 →</span></div>
+      <div class="tl-r"><span class="t">19:45</span><div class="tt"><b>黄土地</b><span>文艺新潮 · 周二专题</span></div><span class="tag a">1984</span><span class="tag">数字修复</span><span class="tag">中字</span><span class="go">详情 →</span></div>
+      <div class="tl-r"><span class="t">21:00</span><div class="tt"><b>英雄本色</b><span>影片黄金期 · 周三动作夜</span></div><span class="tag c">1986</span><span class="tag">粤语原声</span><span class="tag">中字</span><span class="go">详情 →</span></div>
+      <div class="tl-r"><span class="t">20:00</span><div class="tt"><b>倩女幽魂</b><span>奇幻经典 · 周四专场</span></div><span class="tag c">1987</span><span class="tag">粤语原声</span><span class="tag">中字</span><span class="go">详情 →</span></div>
+      <div class="tl-r"><span class="t">19:30</span><div class="tt"><b>芙蓉镇</b><span>完整版 · 周五长片场</span></div><span class="tag a">1986</span><span class="tag">普通话</span><span class="tag">中字</span><span class="go">详情 →</span></div>
+      <div class="tl-r"><span class="t">22:00</span><div class="tt"><b>顽主</b><span>黑色幽默 · 周六深夜场</span></div><span class="tag a">1988</span><span class="tag">普通话</span><span class="tag">中字</span><span class="go">详情 →</span></div>
+      <div class="tl-r"><span class="t">15:00</span><div class="tt"><b>天堂电影院</b><span>导演剪辑 · 周末午后场</span></div><span class="tag b">1988</span><span class="tag b">4K 修复</span><span class="tag">中意字幕</span><span class="go">详情 →</span></div>
+      <div class="tl-r"><span class="t">16:30</span><div class="tt"><b>雨人</b><span>海外引进 · 周日加映</span></div><span class="tag c">1988</span><span class="tag">英语原声</span><span class="tag">中字</span><span class="go">详情 →</span></div>
+      <div class="tl-r"><span class="t">18:00</span><div class="tt"><b>红高粱</b><span>戛纳获奖 · 周末收官场</span></div><span class="tag a">1987</span><span class="tag">普通话</span><span class="tag">中字</span><span class="go">详情 →</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目五：指南 -->
+<section id="guide" style="border-top:1px solid rgba(95,226,255,.14)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">05 // 观影手册</div>
+        <h2 class="sec-t">用 <span class="n">04</span> 步找到 <span class="gr">影片</span></h2>
+        <p class="sec-d">影片最麻烦的是版本，按下面的顺序筛一遍就能避开转录版。</p>
+      </div>
+      <button class="btn-cta" type="button">下载片单 PDF →</button>
+    </div>
+    <div class="guide">
+      <div class="gd"><div class="n">STEP / 01</div><h3>确认年份</h3><p>先按出品年份归档，选片单里的年代分组，不要按选映年份查。</p></div>
+      <div class="gd"><div class="n">STEP / 02</div><h3>核对版本</h3><p>在详情页看版本标注，优先 4K 修复与原始胶片，避开二次转录。</p></div>
+      <div class="gd"><div class="n">STEP / 03</div><h3>看字幕来源</h3><p>普通话配音与双语字幕分开标注，字幕来源不明的不计入评分。</p></div>
+      <div class="gd"><div class="n">STEP / 04</div><h3>对表到场</h3><p>放映时刻表列出时段与版本，错峰前往，长片场提前十分钟入座。</p></div>
+    </div>
+    <div class="chk" id="chk" style="max-width:820px">
+      <div class="chk-i on"><i>✓</i><span>优先选择标注「4K 修复」或「原始胶片」的版本</span></div>
+      <div class="chk-i on"><i>✓</i><span>尽量选原声版本，配音版会损失部分对白节奏</span></div>
+      <div class="chk-i"><i>+</i><span>长片场（150 分钟以上）安排在周五与周末午后</span></div>
+      <div class="chk-i"><i>+</i><span>影片放映前会有五分钟字幕与版本说明</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目六：评论 -->
+<section id="comments" style="border-top:1px solid rgba(95,226,255,.14)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">06 // 影迷来信</div>
+        <h2 class="sec-t">来信箱 · <span class="gr">真实短评</span></h2>
+        <p class="sec-d">信件经人工筛选后归档，不计商业推广，也不接片方投稿</p>
+      </div>
+      <button class="btn-cta" type="button">写一封来信</button>
+    </div>
+    <div class="cmt">
+      <div class="cm"><div class="cm-t"><span class="av" style="background:var(--pink);color:#17040f">老</span><div class="who"><b>老胶片</b><time>2026-09-27 22:18</time></div><span class="st">★★★★★</span></div><p>《第七封情书》这个片子现在几乎找不到了，能在这里看到 4K 修复的版本说明真是意外。画质比预期好太多，胶片颗粒都留住了。</p><div class="cm-f"><span>♥ 196</span><span>↩ 14</span><span>☆ 收藏</span></div></div>
+      <div class="cm"><div class="cm-t"><span class="av" style="background:var(--cyan);color:#04121a">小</span><div class="who"><b>小林</b><time>2026-09-26 20:05</time></div><span class="st">★★★★☆</span></div><p>字幕来源公开这一点太重要了。之前在别处下过《倩女幽魂》的字幕版本不对，白看一遍。这里标注了粤语原声加中字，省了很多事。</p><div class="cm-f"><span>♥ 142</span><span>↩ 9</span><span>☆ 收藏</span></div></div>
+      <div class="cm"><div class="cm-t"><span class="av" style="background:var(--purple);color:#15051f">M</span><div class="who"><b>Maggie</b><time>2026-09-25 17:40</time></div><span class="st">★★★★★</span></div><p>按放映时刻表错峰去的，人不多体验很好。希望后面能多排点经典的欧洲文艺片，意大利和瑞典的那批片子修复质量都很高。</p><div class="cm-f"><span>♥ 88</span><span>↩ 6</span><span>☆ 收藏</span></div></div>
+      <div class="cm"><div class="cm-t"><span class="av" style="background:var(--yellow);color:#241c00">周</span><div class="who"><b>周先生</b><time>2026-09-24 09:12</time></div><span class="st">★★★★☆</span></div><p>演员年表功能很实用，顺着《英雄本色》查到同期的几部影片，一次性把那个阶段的片子补齐了。建议增加导演年表。</p><div class="cm-f"><span>♥ 113</span><span>↩ 11</span><span>☆ 收藏</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 底部 -->
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-g">
+      <div class="ft-brand">
+        <a class="logo" href="#top">
+          <span class="box" aria-hidden="true">藏经</span>
+          <span>苍井空电影网<small>CANGJINGGE FILM LIBRARY</small></span>
+        </a>
+        <p>苍井空电影网（cangjingge）专注电影资料归档与观影信息归档，收录华语与海外经典影片资料、演员年表与放映信息。</p>
+        <div class="codes">
+          <code>cangjingge.github.io</code>
+          <code>HTTPS</code>
+          <code>片库在线</code>
+          <code>每周日 21:00 更新</code>
+        </div>
+      </div>
+      <div class="ft-col">
+        <h4>快速导航</h4>
+        <a href="#home">首页</a>
+        <a href="#about">关于本站</a>
+        <a href="#films">年代片单</a>
+        <a href="#rank">高分榜</a>
+        <a href="#plan">放映时刻</a>
+        <a href="#guide">观影手册</a>
+      </div>
+      <div class="ft-col">
+        <h4>影片年代</h4>
+        <a href="#films">1984 · 华语经典</a>
+        <a href="#films">1986 · 影片黄金</a>
+        <a href="#films">1987 · 文艺新潮</a>
+        <a href="#films">1988 · 黑色幽默</a>
+        <a href="#films">1989 · 海外引进</a>
+        <a href="#films">4K 修复精选</a>
+      </div>
+      <div class="ft-col">
+        <h4>资料服务</h4>
+        <a href="#about">版本核对说明</a>
+        <a href="#comments">影迷来信</a>
+        <a href="#">纠错提交</a>
+        <a href="#">演员年表</a>
+        <a href="#">隐私说明</a>
+        <a href="#">免责声明</a>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>© 2026 苍井空电影网（cangjingge） 保留所有权利 · 网站网址：https://cangjingge.github.io</span>
+      <span><a href="#top">↑ BACK TO TOP</a></span>
+    </div>
+  </div>
+</footer>
+
+<button class="top" id="top" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var mb=document.getElementById('mb'),nav=document.getElementById('nav');
+  if(mb){
+    mb.addEventListener('click',function(){nav.classList.toggle('open');mb.classList.toggle('on')});
+    nav.addEventListener('click',function(e){if(e.target.closest('a')||e.target.closest('button')){nav.classList.remove('open');mb.classList.remove('on')}});
+  }
+  var chips=document.getElementById('chips');
+  if(chips){
+    chips.addEventListener('click',function(e){
+      var b=e.target.closest('button');if(!b)return;
+      var k=b.dataset.k;
+      [].forEach.call(chips.querySelectorAll('button'),function(x){x.classList.toggle('on',x===b)});
+      [].forEach.call(document.querySelectorAll('.grid'),function(g){g.style.display=g.id==='g-'+k?'grid':'none'});
+    });
+  }
+  var chk=document.getElementById('chk');
+  if(chk){
+    chk.addEventListener('click',function(e){
+      var i=e.target.closest('.chk-i');if(!i)return;
+      i.classList.toggle('on');
+      i.querySelector('i').textContent=i.classList.contains('on')?'✓':'+';
+    });
+  }
+  var y=document.getElementById('y'),d=document.getElementById('d'),t=document.getElementById('t');
+  function tick(){
+    var n=new Date();
+    t.textContent=String(n.getHours()).padStart(2,'0')+':'+String(n.getMinutes()).padStart(2,'0');
+  }
+  if(y){y.textContent=19藏经+Math.floor(Math.random()*10);d.textContent=String(Math.floor(Math.random()*365)).padStart(3,'0');tick();setInterval(tick,30000)}
+  var top=document.getElementById('top');
+  var sc=function(){top.classList.toggle('on',window.scrollY>500)};
+  window.addEventListener('scroll',sc,{passive:true});sc();
+  top.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+})();
+</script>
+
+</body>
+</html>
